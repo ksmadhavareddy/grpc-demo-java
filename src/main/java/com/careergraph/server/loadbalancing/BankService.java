@@ -1,10 +1,12 @@
-package com.careergraph.server;
+package com.careergraph.server.loadbalancing;
 
 import com.careergraph.models.*;
+import com.careergraph.server.rpctypes.AccountDatabase;
+import com.careergraph.server.rpctypes.CashStreamingRequest;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
-import static java.lang.Thread.*;
+import static java.lang.Thread.sleep;
 
 public class BankService extends BankServiceGrpc.BankServiceImplBase
 {
@@ -13,6 +15,8 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase
     public void getBalance(BalanceCheckRequest request, StreamObserver<Balance> responseObserver)
     {
         int accountNumber = request.getAccountNumber();
+        System.out.println("Received request for "+ accountNumber);
+
         Balance balance = Balance.newBuilder().setAmount(accountNumber * 10)
                 .build();
 

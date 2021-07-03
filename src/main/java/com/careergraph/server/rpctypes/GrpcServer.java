@@ -1,4 +1,4 @@
-package com.careergraph.server;
+package com.careergraph.server.rpctypes;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;

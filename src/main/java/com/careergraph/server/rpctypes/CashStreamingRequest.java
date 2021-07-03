@@ -1,4 +1,4 @@
-package com.careergraph.server;
+package com.careergraph.server.rpctypes;
 
 import com.careergraph.models.Balance;
 import com.careergraph.models.DepositRequest;

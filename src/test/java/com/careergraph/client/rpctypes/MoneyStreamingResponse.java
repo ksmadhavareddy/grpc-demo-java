@@ -1,4 +1,4 @@
-package com.careergraph.client;
+package com.careergraph.client.rpctypes;
 
 import com.careergraph.models.Money;
 import io.grpc.stub.StreamObserver;

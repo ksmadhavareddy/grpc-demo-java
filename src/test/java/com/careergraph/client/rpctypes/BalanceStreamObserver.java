@@ -1,4 +1,4 @@
-package com.careergraph.client;
+package com.careergraph.client.rpctypes;
 
 import com.careergraph.models.Balance;
 import io.grpc.stub.StreamObserver;

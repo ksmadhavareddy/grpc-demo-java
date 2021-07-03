@@ -1,4 +1,4 @@
-package com.careergraph.server;
+package com.careergraph.server.rpctypes;
 
 import java.util.Map;
 import java.util.function.Function;
